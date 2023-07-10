@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
-  "name": "jbrowse-plugin-template",
+  "name": "jbrowse-site-specific-help",
   "keywords": [
     "jbrowse",
     "jbrowse2"
@@ -19,7 +19,7 @@
     },
     "jbrowse": {
       "plugin": {
-        "name": "Template"
+        "name": "JBrowseSiteSpecificHelp"
       }
     }
   },
@@ -48,7 +48,7 @@
     "postversion": "git push --follow-tags"
   },
   "jbrowse-plugin": {
-    "name": "Template"
+    "name": "JBrowseSiteSpecificHelp"
   },
   "prettier": {
     "semi": false,
@@ -66,7 +66,7 @@
     "@babel/core": "^7.16.5",
     "@babel/preset-react": "^7.10.4",
     "@emotion/react": "^11.10.4",
-    "@jbrowse/cli": "^1.5.1",
+    "@jbrowse/cli": "^2.0.0",
     "@jbrowse/core": "^2.0.0",
     "@jbrowse/development-tools": "^2.0.0",
     "@mui/material": "^5.10.5",
@@ -115,5 +115,9 @@
     "tss-react": "^3.0.0",
     "typescript": "^4.1.3"
   },
-  "private": true
+  "private": false,
+  "description": "A plugin to add a site-specific help menu item",
+  "repository": "https://github.com/scottcain/jbrowse-site-specific-help.git",
+  "author": "Scott Cain <scott+git@scottcain.net>",
+  "license": "MIT"
 }

@@ -4,32 +4,40 @@ import ViewType from '@jbrowse/core/pluggableElementTypes/ViewType'
 import { AbstractSessionModel, isAbstractMenuManager } from '@jbrowse/core/util'
 import { version } from '../package.json'
 import {
-  ReactComponent as HelloViewReactComponent,
-  stateModel as helloViewStateModel,
-} from './HelloView'
+  WBHelpWidget as WBHelpWidget,
+  configSchema as configSchema,
+  stateModel as WBHelpWdigetStateModel,
+} from './WBHelpWidget'
 
-export default class TemplatePlugin extends Plugin {
-  name = 'TemplatePlugin'
+export default class JBrowseSiteSpecificHelp extends Plugin {
+  name = 'JBrowseSiteSpecificHelp'
   version = version
 
   install(pluginManager: PluginManager) {
-    pluginManager.addViewType(() => {
-      return new ViewType({
-        name: 'HelloView',
-        stateModel: helloViewStateModel,
-        ReactComponent: HelloViewReactComponent,
+
+    pluginManager.addWidgetType(() => {
+      return new WidgetType({
+        name: 'WBHelpWidget',
+        heading: 'WormBase Help',
+        configSchema: configSchema,
+        stateModel: wbHelpWdigetStateModel,
+        ReactComponent: lazy(
+          () => import('./WBHelpWidget/components/WBHelpWidget'),
+        ),
       })
     })
-  }
 
-  configure(pluginManager: PluginManager) {
-    if (isAbstractMenuManager(pluginManager.rootModel)) {
-      pluginManager.rootModel.appendToMenu('Add', {
-        label: 'Hello View',
-        onClick: (session: AbstractSessionModel) => {
-          session.addView('HelloView', {})
-        },
-      })
+    configure(pluginManager: PluginManager) {
+      if (isAbstractMenuManager(pluginManager.rootModel)) {
+        pluginManager.rootModel.appendToMenu('Help', {
+          label: 'WormBase Help',
+          icon: HelpIcon,
+          onClick: (session: SessionWithWidgets) => {
+            const widget = session.addWidget('WBHelpWidget', 'wbhelpWidget')
+            session.showWidget(widget)
+          }
+        })
+      }
     }
   }
 }
