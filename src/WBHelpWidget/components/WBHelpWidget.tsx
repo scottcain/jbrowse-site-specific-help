@@ -62,7 +62,7 @@ function WBHelp({ model }: { model?: IAnyStateTreeNode }) {
             Working with lists, bookmarks and sessions
           </Link>
         </li>
-                <li>
+        <li>
           <Link
             href="https://blog.wormbase.org/2023/06/23/jbrowse-2-adding-your-own-data/"
             target="_blank"
@@ -72,6 +72,7 @@ function WBHelp({ model }: { model?: IAnyStateTreeNode }) {
           </Link>
         </li>
       </ul>
+      <p>The source code for this help widget plugin is on <a target="_blank" href="https://github.com/scottcain/jbrowse-site-specific-help">GitHub</a></p>
     </div>
   )
 }
