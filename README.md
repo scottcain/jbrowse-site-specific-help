@@ -31,5 +31,7 @@ While this plugin is WormBase specific, generalizing it to your own site should 
 Basically, find referneces to WormBase in the code and change them.  I think these items are limited to:
 
 * Change the menu label in `src/index.ts` from `WormBase Help` to something else
-* Edit 	`src/WBHelpWidget/components/WBHelpWidget.tsx` to change the label from `JBrowse 2 @ WormBase` to something else, and th change the links and labels to what you want.
+* Edit 	`src/WBHelpWidget/components/WBHelpWidget.tsx` to change the label from `JBrowse 2 @ WormBase` to something else, and change the links and labels to what you want.
+
+After running `yarn` and `yarn build` place `jbrowse-site-specific-help.umd.development.js` and `jbrowse-site-specific-help.umd.development.js.map` in a web-accessible place and modify the plugin json code above to point at it.
 
