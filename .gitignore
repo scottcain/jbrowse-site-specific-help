@@ -1,2 +1,5 @@
 .jbrowse
 node_modules
+dist
+videos
+.DS_Store

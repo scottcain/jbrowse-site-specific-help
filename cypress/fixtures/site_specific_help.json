@@ -42,16 +42,11 @@
   ],
   "plugins": [
     {
-      "name": "JbrowseSiteSpecificHelp",
+      "name": "JBrowseSiteSpecificHelp",
       "url": "http://localhost:9000/dist/jbrowse-site-specific-help.umd.development.js"
     }
   ],
   "defaultSession": {
-    "name": "New session",
-    "views": [
-      {
-        "type": "HelloView"
-      }
-    ]
+    "name": "New session"
   }
 }
