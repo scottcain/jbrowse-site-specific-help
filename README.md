@@ -39,8 +39,8 @@ After running `yarn` and `yarn build` place `jbrowse-site-specific-help.umd.deve
 ### Testing
 
 This plugin also has the infrastructure to run cypress tests. To run these test, first you have to have the test server running:
-
+```
   yarn start
   yarn browse
-
+```
 which will start the test instance of JBrowse on http://localhost:8999/. Then you can run either `yarn cypress:run` to run the tests in a headless state, or run `yarn cypress:open` to open the cypress app and run the tests interactively.
