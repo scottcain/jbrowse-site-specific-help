@@ -3,7 +3,8 @@
   "name": "jbrowse-site-specific-help",
   "keywords": [
     "jbrowse",
-    "jbrowse2"
+    "jbrowse2",
+    "jbrowse plugin"
   ],
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
