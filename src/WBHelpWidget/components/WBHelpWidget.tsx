@@ -71,6 +71,15 @@ function WBHelp({ model }: { model?: IAnyStateTreeNode }) {
             Adding your own data
           </Link>
         </li>
+        <li>
+          <Link
+            href="https://blog.wormbase.org/2023/07/14/jbrowse-2-sharing-views/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sharing views 
+          </Link>
+        </li>
       </ul>
       <p>The source code for this help widget plugin is on <a target="_blank" href="https://github.com/scottcain/jbrowse-site-specific-help">GitHub</a></p>
     </div>
