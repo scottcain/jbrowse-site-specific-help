@@ -1,6 +1,8 @@
 # jbrowse-site-specific-help
 > A JBrowse 2 plugin to make a site specific help widget
 
+![Site Specific widget screenshot](https://raw.githubusercontent.com/scottcain/jbrowse-site-specific-help/main/img/JBrowseSiteSpecificHelp_screenshot.png)
+
 ## Install
 
 ### For use in [JBrowse Web](https://jbrowse.org/jb2/docs/quickstart_web)
