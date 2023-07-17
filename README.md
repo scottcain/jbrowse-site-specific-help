@@ -5,7 +5,11 @@
 
 ### For use in [JBrowse Web](https://jbrowse.org/jb2/docs/quickstart_web)
 
-No installation required
+No installation required; this plugin can be installed from the JBrowse
+plugin store though the documentation is written with a "WormBase slant"; 
+that is, while non-WormBase users may find the documentation useful, 
+all of the examples pertain to WormBase. This plugin does serve as a 
+useful example of creating plugins that modify menu items.
 
 ### Production
 
