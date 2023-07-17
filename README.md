@@ -28,7 +28,7 @@ This plugin is relatively straightforward and serves as a good example of how to
 add items to menus.  You can find the repo at https://github.com/scottcain/jbrowse-site-specific-help.
 
 While this plugin is WormBase specific, generalizing it to your own site should not be difficult.
-Basically, find referneces to WormBase in the code and change them.  I think these items are limited to:
+Basically, find references to WormBase in the code and change them.  I think these items are limited to:
 
 * Change the menu label in `src/index.ts` from `WormBase Help` to something else.
 * Edit 	`src/WBHelpWidget/components/WBHelpWidget.tsx` to change the label from `JBrowse 2 @ WormBase` to something else, and change the links and labels to what you want.
